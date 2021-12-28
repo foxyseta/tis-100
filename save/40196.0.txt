@@ -1,0 +1,44 @@
+@0
+## SOLUTION
+
+@1
+MOV UP, RIGHT
+
+@2
+BEGIN:
+  MOV LEFT, ACC
+  MOV 0, DOWN
+  JNZ BEGIN
+  MOV LEFT, ACC
+  MOV 0, DOWN
+  JNZ BEGIN
+FINALE:
+  MOV LEFT, ACC
+  JNZ FAIL
+  MOV 1, DOWN
+  JMP FINALE
+FAIL:
+  MOV 0, DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP, DOWN
+
+@10

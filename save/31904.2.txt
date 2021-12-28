@@ -1,0 +1,51 @@
+@0
+## FEWER INSTR
+
+@1
+MOV UP, DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP, ACC
+MOV ACC, DOWN
+MOV ACC, DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+BEGIN:
+  SAV
+  MOV UP, ACC
+  JEZ END
+  MOV 3, RIGHT
+  SWP
+  ADD UP
+  JMP BEGIN
+END:
+  MOV 1, RIGHT
+  SWP
+  MOV ACC, DOWN
+  MOV UP, ACC
+
+@9
+BEGIN:
+  JRO LEFT
+  # 1: END
+  MOV ACC, DOWN
+  MOV -1, ACC
+  # 3: INC
+  ADD 1
+
+@10
